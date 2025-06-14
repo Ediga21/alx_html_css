@@ -1,41 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>My Tweets</title>
+    <meta charset="utf-8" />
+    <title>Ediga Barnabas - Tweets</title>
     <link href="base.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
+    <!-- Header Section -->
     <header>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tweets.html">Tweets</a></li>
-      </ul>
+      <h1>Ediga Barnabas</h1>
+      <p>Follow my learning journey and updates!</p>
     </header>
 
-    <main>
-      <article>
-        <h1>My Tweets</h1>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#tweets">Tweets</a></li>
+      </ul>
+    </nav>
 
-        <!-- Embedded tweet -->
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">
-            Learning HTML is fun! 🚀
-          </p>
-          &mdash; Ediga Barnabas (@ediga_barnabas)
-          <a href="https://x.com/Ediga_Barnabas/status/1926771318868836528?t=WzPL3EUGPo4RhCxzXKvGeg&s=19">March 1, 2024</a>
-        </blockquote>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- Flexbox Layout Container -->
+    <main>
+      <!-- Main content section (2/3 width) -->
+      <article>
+        <section id="tweets">
+          <h2>Latest Tweets</h2>
+
+          <!-- Example Tweet Embeds -->
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Just started learning CSS Flexbox! 💪 <br>
+              #100DaysOfCode #WebDev
+            </p>
+            &mdash; Ediga Barnabas (@ediga_barnabas)
+            <a href="https://twitter.com/ediga_barnabas/status/1234567890">View Tweet</a>
+          </blockquote>
+
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Finished my first portfolio page today! 🧠🚀<br>
+              #ALX #SoftwareEngineering
+            </p>
+            &mdash; Ediga Barnabas (@ediga_barnabas)
+            <a href="https://twitter.com/ediga_barnabas/status/9876543210">View Tweet</a>
+          </blockquote>
+        </section>
       </article>
 
+      <!-- Sidebar (1/3 width) -->
       <aside>
-        <p>placeholder to add comment thread later</p>
+        <section id="more-info">
+          <h2>More</h2>
+          <p>Check out my <a href="index.html">portfolio homepage</a> or reach me on:</p>
+          <ul>
+            <li><a href="https://github.com/ediga-barnabas" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ediga-barnabas" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:ediga.barnabas@example.com">Email Me</a></li>
+          </ul>
+        </section>
       </aside>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <p>Made by Ediga Barnabas - <a href="https://github.com/ediga-barnabas" target="_blank">here</a></p>
+      <p>&copy; 2024 Ediga Barnabas</p>
     </footer>
+
+    <!-- Twitter Embed Script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
