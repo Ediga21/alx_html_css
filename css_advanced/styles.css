@@ -287,11 +287,193 @@ main > section:nth-of-type(5) dd::before {
   font-weight: bold;
 }
 
-/* Footer */
+/* Footer (Updated for Figma Design) */
 footer {
   background-color: #071629;
   color: #fff;
+  padding: 40px 20px;
   text-align: center;
-  padding: 20px;
   font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff3b3f;
+}
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .logo {
+  height: 40px;
+}
+
+header nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #071629;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(0deg, rgba(7, 22, 41, 0.9), rgba(7, 22, 41, 0.9)),
+              url('https://images.unsplash.com/photo-1607746882042-944635dfe10e') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero .hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.hero p span {
+  display: inline-block;
+  background-color: #c271ff;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 0 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hero button {
+  background-color: #c271ff;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero bu/* Quote Section Styling */
+.testimonial {
+  background-color: #071629;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 80px 20px;
+}
+
+.testimonial img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.testimonial blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.testimonial h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.testimonial p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 5px 0 0;
+}
+tton:hover {
+  background-color: #a456cc;
+}
+
+/* Quote/Testimonial Section */
+main > section.testimonial {
+  background-color: #071629;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  text-align: left;
+}
+
+main > section.testimonial img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+main > section.testimonial blockquote {
+  max-width: 600px;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0 0 15px 0;
+}
+
+main > section.testimonial h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+main > section.testimonial p {
+  font-size: 0.9rem;
+  color: #ccc;
 }
