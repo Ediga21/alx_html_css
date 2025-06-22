@@ -1,0 +1,73 @@
+/* Animations */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* What We Do Animation */
+.feature {
+  animation: scaleUp 0.6s ease-in-out forwards;
+  opacity: 0;
+}
+.feature:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.feature:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.feature:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+/* Our Results Animation */
+.result {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+.result:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.result:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.result:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.result:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.result:hover {
+  animation: bounce 0.6s ease infinite;
+}
