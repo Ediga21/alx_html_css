@@ -1,0 +1,29 @@
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+@media (max-width: 480px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
